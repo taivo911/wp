@@ -9,9 +9,15 @@
 * Author URI: http://taivonurk.ikt.khk.ee/
 **/
 
-function dh_modify_read_more_link() {
- return '<a class="more-link" href="' . get_permalink() . '">Click to Read!</a>';
+function new_excerpt_more($more) {
+    return '';
 }
-add_filter( 'the_content_more_link', 'dh_modify_read_more_link' );
+add_filter('excerpt_more', 'new_excerpt_more', 21 );
 
+function the_excerpt_more_link( $excerpt ){
+    $post = get_post();
+    $excerpt .= '... <a href="'. get_permalink($post->ID) . '">Loe edasi!</a>.';
+    return $excerpt;
+}
+add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
 ?>

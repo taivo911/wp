@@ -1,0 +1,11 @@
+[11-Jan-2021 07:58:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Lingotek_Model' not found in /home/taivonurkiktkhk/public_html/WP/wp-content/plugins/lingotek-translation/lingotek.php:533
+Stack trace:
+#0 /home/taivonurkiktkhk/public_html/WP/wp-includes/class-wp-hook.php(287): Lingotek->init('')
+#1 /home/taivonurkiktkhk/public_html/WP/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/taivonurkiktkhk/public_html/WP/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/taivonurkiktkhk/public_html/WP/wp-settings.php(557): do_action('init')
+#4 /home/taivonurkiktkhk/public_html/WP/wp-config.php(93): require_once('/home/taivonurk...')
+#5 /home/taivonurkiktkhk/public_html/WP/wp-load.php(37): require_once('/home/taivonurk...')
+#6 /home/taivonurkiktkhk/public_html/WP/wp-cron.php(44): require_once('/home/taivonurk...')
+#7 {main}
+  thrown in /home/taivonurkiktkhk/public_html/WP/wp-content/plugins/lingotek-translation/lingotek.php on line 533
